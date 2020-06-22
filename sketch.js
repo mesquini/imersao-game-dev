@@ -17,7 +17,7 @@ function setup() {
   scenario = new Scenario(imageScenario, 3);
   character = new Character(imageCharacter);
   frameRate(30);
-  // musicGame.loop();
+  musicGame.loop();
 }
 
 function draw() {
@@ -25,5 +25,4 @@ function draw() {
   scenario.move();
 
   character.show();
-  character.move();
 }

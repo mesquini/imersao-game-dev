@@ -34,6 +34,8 @@ class Character {
       220,
       270
     );
+
+    this.move();
   }
 
   move() {
