@@ -1,11 +1,21 @@
 class Animation {
-  constructor(matrix, image, x, widthX, heightY, witdhSprit, heightSprit) {
+  constructor(
+    matrix,
+    image,
+    x,
+    variationY,
+    widthX,
+    heightY,
+    witdhSprit,
+    heightSprit
+  ) {
     this.matrix = matrix;
     this.image = image;
     this.x = x;
+    this.variationY = variationY;
     this.widthX = widthX;
     this.heightY = heightY;
-    this.y = height - this.heightY;
+    this.y = height - this.heightY - this.variationY;
     this.witdhSprit = witdhSprit;
     this.heightSprit = heightSprit;
 
@@ -31,5 +41,9 @@ class Animation {
   anima() {
     this.frameCurrent++;
     if (this.frameCurrent >= this.matrix.length - 1) this.frameCurrent = 0;
+  }
+
+  delete() {
+    this.y = -200;
   }
 }

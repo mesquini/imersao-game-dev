@@ -1,37 +1,73 @@
 class Character extends Animation {
-  constructor(matrix, image, x, widthX, heightY, witdhSprit, heightSprit) {
-    super(matrix, image, x, widthX, heightY, witdhSprit, heightSprit);
+  constructor(
+    matrix,
+    image,
+    x,
+    variationY,
+    widthX,
+    heightY,
+    witdhSprit,
+    heightSprit
+  ) {
+    super(
+      matrix,
+      image,
+      x,
+      variationY,
+      widthX,
+      heightY,
+      witdhSprit,
+      heightSprit
+    );
     this.image = image;
 
-    this.yInitial = height - heightY;
+    this.variationY = variationY;
+    this.yInitial = height - heightY - this.variationY;
     this.y = this.yInitial;
 
     this.speedJump = 0;
-    this.gravity = 3;
+    this.gravity = 4;
+    this.heightJump = -40;
+    this.jumps = 0;
   }
 
   jump() {
-    this.speedJump = -30;
+    if (this.jumps < 2) {
+      this.speedJump = this.heightJump;
+      this.jumps++;
+    }
   }
 
   applyGravity() {
     this.y = this.y + this.speedJump;
     this.speedJump = this.speedJump + this.gravity;
 
-    if (this.y > this.yInitial) this.y = this.yInitial;
+    if (this.y > this.yInitial) {
+      this.y = this.yInitial;
+      this.jumps = 0;
+    }
   }
 
   colliding(enemy) {
-    const precision = 0.7;
+    noFill();
+
+    // rect(this.x + 15, this.y + 10, this.widthX * 0.67, this.heightY - 10);
+    // rect(
+    //   enemy.x + enemy.precisionX,
+    //   enemy.y + enemy.precisionY,
+    //   enemy.widthX * enemy.precision,
+    //   enemy.heightY * enemy.precision
+    // );
+
     const collide = collideRectRect(
-      this.x,
-      this.y,
-      this.widthX * precision,
-      this.heightY * precision,
-      enemy.x,
-      enemy.y,
-      enemy.widthX * precision,
-      enemy.heightY * precision
+      this.x + 15,
+      this.y + 10,
+      this.widthX * 0.67,
+      this.heightY - 10,
+      enemy.x + enemy.precisionX,
+      enemy.y + enemy.precisionY,
+      enemy.widthX * enemy.precision,
+      enemy.heightY * enemy.precision
     );
 
     return collide;
