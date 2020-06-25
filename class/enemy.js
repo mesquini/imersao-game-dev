@@ -10,7 +10,7 @@ class Enemy extends Animation {
     witdhSprit,
     heightSprit,
     delay,
-    velocidade,
+    speed,
     precision,
     precisionX,
     precisionY
@@ -28,7 +28,7 @@ class Enemy extends Animation {
 
     this.name = name;
 
-    this.velocidade = velocidade;
+    this.speed = speed;
     this.delay = delay;
     this.x = width + this.delay;
 
@@ -38,10 +38,20 @@ class Enemy extends Animation {
   }
 
   move() {
-    this.x = this.x - this.velocidade;
+    this.x = this.x - this.speed;
 
     if (this.x <= -this.widthX - this.delay) {
       this.x = width;
+    }
+
+    if (this.name === "Gotinha Voadora") {
+      const baseline = height - this.heightY + random(50, 450);
+
+      this.y += 5 * cos(frameCount * 0.15);
+
+      if (this.y > baseline) {
+        this.y = baseline;
+      }
     }
   }
 }

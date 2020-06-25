@@ -13,7 +13,7 @@ class Score {
   }
 
   addScore() {
-    this.score += 0.2;
+    this.score += 0.08;
   }
 
   verifyScore() {

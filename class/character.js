@@ -38,6 +38,11 @@ class Character extends Animation {
     }
   }
 
+  move(keyCode) {
+    if (keyCode === 39 || keyCode === 68) this.x += 35;
+    if (keyCode === 37 || keyCode === 65) this.x -= 35;
+  }
+
   applyGravity() {
     this.y = this.y + this.speedJump;
     this.speedJump = this.speedJump + this.gravity;
