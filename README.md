@@ -26,12 +26,11 @@ index.html
 
 ## 🖼 Previa do Game
 
+[Link do video](https://dms.licdn.com/playlist/C5605AQGuBuZaG9UqFQ/mp4-720p-30fp-crf28/0?e=1593295200&v=beta&t=H_1ecvSJ-I609hCLt-8-6TcTLWqgKaYBpfzS_NbZmTM)
+
 <p align="center">
-  <video width="400" controls>
-    <source src=".github/preview.mp4" type="video/mp4">
-    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-    Your browser does not support HTML video.
-</video>
+  Link do post do video
+  https://www.linkedin.com/feed/update/urn:li:ugcPost:6682390835461550080/
 </p>
 
 ## 📝 Licença
