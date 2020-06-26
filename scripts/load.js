@@ -13,6 +13,8 @@ function preload() {
   imageGamerOver = loadImage("../assets/imagens/gameOver.jpg");
   imageTeclas = loadImage("../assets/imagens/teclas.png");
 
+  imageLife = loadImage("../assets/imagens/coracao.png");
+
   musicGame = loadSound("../assets/sons/trilha_jogo.mp3");
   musicGame.setVolume(0.25);
 
@@ -20,4 +22,9 @@ function preload() {
 
   soundGameOver = loadSound("../assets/sons/gameOver.mp3");
   soundGameOver.setVolume(0.1);
+
+  soundHitDamage = loadSound("../assets/sons/hitDamage.mp3");
+  soundHitDamage.setVolume(0.2);
+
+  configGame = loadJSON("../maps/map-1.json");
 }

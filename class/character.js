@@ -29,6 +29,7 @@ class Character extends Animation {
     this.gravity = 4;
     this.heightJump = -40;
     this.jumps = 0;
+    this.immune = false;
   }
 
   jump() {
@@ -53,8 +54,17 @@ class Character extends Animation {
     }
   }
 
+  isImmune() {
+    this.immune = true;
+    setTimeout(() => {
+      this.immune = false;
+    }, 1500);
+  }
+
   colliding(enemy) {
     noFill();
+
+    if (this.immune) return false;
 
     // rect(this.x + 15, this.y + 10, this.widthX * 0.67, this.heightY - 10);
     // rect(

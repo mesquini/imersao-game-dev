@@ -37,9 +37,13 @@ let imageEnemyFly;
 let imageGamerOver;
 let imageTeclas;
 
+let imageLife;
+
 let musicGame;
 let soundJump;
 let soundGameOver;
+
+let soundHitDamage;
 
 let score;
 let gameover = false;
@@ -51,6 +55,9 @@ let scenarioAtual = "screenInitial";
 let scenarios;
 
 let button;
+let life;
+
+let configGame;
 
 const enemyes = [];
 

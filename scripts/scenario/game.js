@@ -1,11 +1,17 @@
 class Game {
   constructor() {
-    this.enemyAtual = 0;
+    this.index = 0;
+    this.map = configGame.map;
   }
 
   setup() {
     scenario = new Scenario(imageScenario, 5);
     score = new Score();
+    life = new Life(
+      configGame.configs.lifeTotal,
+      configGame.configs.lifeInitial
+    );
+
     character = new Character(
       matrixCharacter,
       imageCharacter,
@@ -93,25 +99,32 @@ class Game {
     scenario.show();
     score.show();
 
+    life.draw();
+
     character.show();
     character.applyGravity();
 
-    const enemy = enemyes[this.enemyAtual];
+    // const lineCurrent = this.map[this.index];
+    const enemy = enemyes[this.index];
 
     const enemyVisibled = enemy.x < -enemy.widthX;
+    enemy.speed = parseInt(random(10, 35));
     // const enemyHalfWay = width / 2 >= enemy.x;
 
     enemy.show();
     enemy.move();
 
     if (enemyVisibled) {
-      this.enemyAtual = parseInt(random(0, enemyes.length));
-      if (this.enemyAtual >= enemyes.length) this.enemyAtual = getRandomEnemy();
-      enemy.speed = parseInt(random(15, 30));
+      this.index = parseInt(random(0, enemyes.length));
+      if (this.index >= enemyes.length) this.index = getRandomEnemy();
     }
 
     if (character.colliding(enemy)) {
-      gameOver(enemy);
+      soundHitDamage.play();
+      life.removeLife();
+      character.isImmune();
+
+      if (life.lifes === 0) gameOver(enemy);
     }
   }
 }
