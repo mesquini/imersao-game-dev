@@ -1,4 +1,4 @@
-<p align="center"><img src=".github/witch.gif"></p>
+<p align="center"><img src=".github/witch.gif" width="300"></p>
 
 <h1 align="center">#ImersaoGameDev<br>
   <img src="https://img.shields.io/github/repo-size/mesquini/imersao-game-dev" /> 
@@ -31,11 +31,10 @@ index.html
 
 ## 🖼 Previa do Game
 
-[Link do video](https://dms.licdn.com/playlist/C4D05AQEugvLCkxl9UA/mp4-720p-30fp-crf28/0?e=1594393200&v=beta&t=A-1BkbJtCEJIP8qHvR6JNEUzjUvCnNVY0cLDoMLhVpI)
+<p align="center"><img src=".github/preview.gif" width="500"></p>
 
 <p align="center">
-  Link do post do video
-  https://www.linkedin.com/posts/mesquini_alura-js-p5js-activity-6683379973564198912-bKAo
+<a href="https://dms.licdn.com/playlist/C4D05AQEugvLCkxl9UA/mp4-720p-30fp-crf28/0?e=1594393200&v=beta&t=A-1BkbJtCEJIP8qHvR6JNEUzjUvCnNVY0cLDoMLhVpI" target="_blank">Link do Video completo</a>
 </p>
 
 ## :video_game: Venha se divertir
