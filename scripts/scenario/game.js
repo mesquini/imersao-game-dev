@@ -1,7 +1,7 @@
 class Game {
   constructor() {
     this.index = 0;
-    this.map = configGame.map;
+    // this.map = configGame.map;
   }
 
   setup() {
