@@ -17,8 +17,6 @@ function setup() {
 }
 
 function keyPressed() {
-  console.log("keyPressed");
-
   game.keyPressed(keyCode);
 }
 
