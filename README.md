@@ -31,16 +31,16 @@ index.html
 
 ## 🖼 Previa do Game
 
-[Link do video](https://dms.licdn.com/playlist/C5605AQGuBuZaG9UqFQ/mp4-720p-30fp-crf28/0?e=1593295200&v=beta&t=H_1ecvSJ-I609hCLt-8-6TcTLWqgKaYBpfzS_NbZmTM)
+[Link do video](https://dms.licdn.com/playlist/C4D05AQEugvLCkxl9UA/mp4-720p-30fp-crf28/0?e=1594393200&v=beta&t=A-1BkbJtCEJIP8qHvR6JNEUzjUvCnNVY0cLDoMLhVpI)
 
 <p align="center">
   Link do post do video
-  https://www.linkedin.com/feed/update/urn:li:ugcPost:6682390835461550080/
+  https://www.linkedin.com/posts/mesquini_alura-js-p5js-activity-6683379973564198912-bKAo
 </p>
 
-## :video_game: Have Fun
+## :video_game: Venha se divertir
 
-You can play the game here:
+Você pode jogar o jogo clicando aqui:
 
 - [Game Dev][game]
 
