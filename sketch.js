@@ -1,5 +1,3 @@
-/// <reference path="./references/p5.global-mode.d.ts" />
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
   game = new Game();
@@ -19,7 +17,7 @@ function setup() {
 }
 
 function keyPressed() {
-  game.keyPressed();
+  game.keyPressed(keyCode);
 }
 
 function draw() {

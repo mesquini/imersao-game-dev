@@ -79,7 +79,7 @@ class Game {
     this.enemyAtual = getRandomEnemy();
   }
 
-  keyPressed() {
+  keyPressed(keyCode) {
     if (!gameover && scenarioAtual === "game") {
       if (keyCode === 38 || keyCode === 32 || keyCode === 87) {
         character.jump();

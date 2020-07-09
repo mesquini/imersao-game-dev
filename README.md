@@ -1,6 +1,11 @@
 <p align="center"><img src=".github/witch.gif"></p>
 
-<h1 align="center">#ImersaoGameDev<br><img src="https://img.shields.io/github/repo-size/mesquini/imersao-game-dev"> <img src="https://img.shields.io/github/last-commit/mesquini/imersao-game-dev"> <img src="https://img.shields.io/github/license/mesquini/imersao-game-dev"></h1>
+<h1 align="center">#ImersaoGameDev<br>
+  <img src="https://img.shields.io/github/repo-size/mesquini/imersao-game-dev" /> 
+  <img alt="Languages" src="https://img.shields.io/github/languages/count/mesquini/imersao-game-dev" />
+  <img src="https://img.shields.io/github/last-commit/mesquini/imersao-game-dev" /> 
+  <img src="https://img.shields.io/github/license/mesquini/imersao-game-dev" />
+</h1>
 
 ## 🔖 Descrição
 
@@ -34,8 +39,29 @@ index.html
 </video>
 </p>
 
+## :video_game: Have Fun
+
+You can play the game here:
+
+- [Game Dev][game]
+
+## :thumbsup: Como contribuir
+
+- faça uma Fork;
+- Crie um ramo com o seu recurso: `git checkout -b my-feature`;
+- Confirmar alterações: `git commit -m 'feat: My new feature'`;
+- Faça um push no seu ramo: `git push origin my-feature`.
+
+Depois de mesclar sua solicitação de recebimento, você pode excluir uma filial da sua.
+
 ## 📝 Licença
 
 O projeto se encontra sob licença MIT. Para mais detalhes, acesse [license](LICENSE).
 
-Criado com 💙 por [Victor Mesquini](https://www.linkedin.com/in/mesquini/)
+---
+
+<p align="center">
+  Criado com 💙 por [Victor Mesquini](https://www.linkedin.com/in/mesquini/)
+</p>
+
+[game]: https://mesquini.github.io/imersao-game-dev/
